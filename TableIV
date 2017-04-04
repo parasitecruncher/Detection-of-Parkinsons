@@ -1,0 +1,81 @@
+SVM
+
+	RBF
+
+		Average
+
+Accuracy : 44.2425 %
+MCC: -0.169766406556
+Specificity: 13.6422738857 %
+Sensitivity 72.5653492514 %
+
+		Best
+Accuracy : 72.5 %
+MCC: 0.5256574830378469
+Specificity: 42.10526315789473 %
+Sensitivity 100.0 %
+
+	Linear
+		Average
+Accuracy : 87.0975 %
+MCC: 0.741625764638
+Specificity: 86.8594912345 %
+Sensitivity 87.3177070799 %
+
+		Best
+Accuracy : 100 %
+MCC: 1.0
+Specificity: 100 %
+Sensitivity 100 %
+
+KNN
+	7
+		Average
+Accuracy : 53.8375 %
+MCC: 0.0708028045271
+Specificity: 44.0297343661 %
+Sensitivity 62.9244328854 %
+		Best
+Accuracy : 80.0 %
+MCC: 0.603022689156
+Specificity: 85.0 %
+Sensitivity 75.0 %
+	5
+		Average
+Accuracy : 55.17 %
+MCC: 0.0996425257378
+Specificity: 48.9924171601 %
+Sensitivity 60.9033066615 %
+		Best
+Accuracy : 80.0%
+MCC: 0.6075272752247604
+Specificity: 68.42105263157895%
+Sensitivity 90.47619047619048  %
+	3
+		Average
+Accuracy : 56.48 %
+MCC: 0.127110969441
+Specificity: 52.6184538653 %
+Sensitivity 60.0616808019 %
+		Best
+Accuracy : 82.5 %
+MCC: 0.650814026618
+Specificity: 84.2105263158 %
+Sensitivity 80.9523809524 %
+
+	1
+		Average
+Accuracy : 57.69 %
+MCC: 0.152314508569
+Specificity: 55.5393964577 %
+Sensitivity 59.685737697 %
+		Best
+Accuracy : 82.5 %
+MCC: 0.649061225087
+Specificity: 78.9473684211 %
+Sensitivity 85.7142857143 %
+
+
+
+
+
