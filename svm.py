@@ -183,7 +183,7 @@ def svm(groupsX,groupsY):
     for i in range(len(groupsX[0])):
         X_train,X_test = testtrainsplit(groupsX,i)
         Y_train,Y_test = testtrainsplit(groupsY,i)
-        model = SVC(kernel='rbf',C=10.0,gamma=0.0005)
+        model = SVC(kernel='linear')
         model.fit(X_train,Y_train)
         predicted.extend(model.predict(X_test))
         expected.extend(Y_test)
@@ -196,7 +196,6 @@ def main():
     df=pd.read_csv('train_data2.csv',header=None)
     X, y = splitdatatarget(df)
     folds_x,folds_y = makefolds(X,y,k)
-    mean_absolute_deviation(folds_x,folds_y)
     datasetsX=list()
     datasetsY=list()
     for i in range(6):
@@ -220,9 +219,10 @@ def main():
             datasetsY.append(interquartile_range(folds_x, folds_y)[1])
     print datasetsY
     print len(datasetsX)
-    groupsX=list()
-    groupsY=list()
+
     for i in range(len(datasetsX)/2):
+        groupsX = list()
+        groupsY = list()
         print "s-loo",i+1,"-",i+4
         groupsX.append(datasetsX[i])
         groupsX.append(datasetsX[i+3])
