@@ -4,9 +4,7 @@ import numpy as np
 import scipy
 import copy
 import operator
-from sklearn.svm import SVC
 import math
-from sklearn import metrics
 
 
 def splitdatatarget(dataframe):
